@@ -1,3 +1,19 @@
+
+NOT THE CODE YOU'RE LOOKING FOR
+===============================
+NOT THE REAL BankAccount, Go get it from the source: thePHP.cc
+
+What?
+-----
+
+See, I bought this book from Sebastian to get prepared for a demo I want to do tomorrow.  But, my VM is running
+php 5.3 (and kind of needs to be because I'm using my "dev" vm).  But, I need the tests to run, 
+because it's a Jenkins demo.  Well, yada, yada...this fork removes the traits and replaces them with extends.
+
+
+
+
+
 BankAccount
 ===========
 
