@@ -28,6 +28,7 @@
   <delete dir="${basedir}/build/logs"/>
   <delete dir="${basedir}/build/pdepend"/>
   <delete dir="${basedir}/build/phpdox"/>
+  <delete dir="${basedir}/build/phpdoc"/>
  </target>
 
  <target name="prepare" depends="clean,phpab"
@@ -38,6 +39,7 @@
   <mkdir dir="${basedir}/build/logs"/>
   <mkdir dir="${basedir}/build/pdepend"/>
   <mkdir dir="${basedir}/build/phpdox"/>
+  <mkdir dir="${basedir}/build/phpdoc"/>
  </target>
 
  <target name="phpab" description="Generate autoloader scripts">
@@ -137,7 +139,9 @@
   <exec executable="phpcs" output="/dev/null">
    <arg value="--report=checkstyle" />
    <arg value="--report-file=${basedir}/build/logs/checkstyle.xml" />
-   <arg value="--standard=${basedir}/build/phpcs.xml" />
+   <!-- <arg value="-
+	-standard=${basedir}/build/phpcs.xml" /> -->
+   <arg value="--standard=/usr/share/php/PHP/CodeSniffer/Standards/PSR2/ruleset.xml" />
    <arg value="--ignore=autoload.php" />
    <arg path="${basedir}/src" />
   </exec>
