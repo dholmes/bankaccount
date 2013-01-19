@@ -3,7 +3,7 @@ namespace bankaccount\framework;
 
 use bankaccount\framework\exception\OutOfBoundsException;
 
-trait HashMap
+class HashMap
 {
     protected $values = array();
 
