@@ -9,7 +9,7 @@ class HashMapTest extends PHPUnit_Framework_TestCase
      */
     public function testIsInitiallyEmpty()
     {
-        $hashMap = $this->getObjectForTrait('bankaccount\\framework\\HashMap');
+        $hashMap = new bankaccount\framework\HashMap;
         $this->assertAttributeEmpty('values', $hashMap);
 
         return $hashMap;
@@ -33,7 +33,7 @@ class HashMapTest extends PHPUnit_Framework_TestCase
      */
     public function testExceptionIsRaisedWhenAccessingAnElementThatDoesNotExist()
     {
-        $hashMap = $this->getObjectForTrait('bankaccount\\framework\\HashMap');
+        $hashMap = new bankaccount\framework\HashMap;
         $hashMap->get('foo');
     }
 }
