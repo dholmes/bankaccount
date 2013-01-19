@@ -4,9 +4,8 @@ namespace bankaccount\framework\router;
 use bankaccount\framework\http\Request;
 use bankaccount\framework\HashMap;
 
-class Router
+class Router extends HashMap
 {
-    use HashMap;
 
     private $defaultController;
 

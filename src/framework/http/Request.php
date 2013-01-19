@@ -3,9 +3,8 @@ namespace bankaccount\framework\http;
 
 use bankaccount\framework\HashMap;
 
-class Request
+class Request extends HashMap
 {
-    use HashMap;
 
     protected $uri;
 

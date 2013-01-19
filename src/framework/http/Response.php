@@ -3,7 +3,6 @@ namespace bankaccount\framework\http;
 
 use bankaccount\framework\HashMap;
 
-class Response
+class Response extends HashMap
 {
-    use HashMap;
 }
